@@ -1,0 +1,101 @@
+form {
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+h1 {
+  font-weight: 200;
+  color: #8ec451;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+body {
+  padding: 20px 300px;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+  color: #8ec451;
+  font-size: small;
+}
+.container {
+  padding: 30px;
+  border: 10px solid #8ec451;
+  border-radius: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+#location {
+  border: 3px solid #5b6275;
+  border-radius: 40px;
+  padding: 20px 20px 20px;
+  width: 400px;
+}
+#searchbutton {
+  padding: 20px;
+  border-radius: 40px;
+  border: 3px solid #8ec451;
+  background: white;
+  width: 100px;
+  transition: all 200ms ease-in-out;
+}
+#searchbutton:hover {
+  background: #8ec451;
+  border: 3px solid #8ec451;
+}
+.place {
+  font-weight: 500;
+  font-size: 30px;
+}
+.day {
+  font-weight: 550;
+  color: #5b6275;
+  font-size: 27px;
+}
+#temperature {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #8ec451;
+  font-weight: 550;
+}
+#description {
+  font-family: "Poppins", sans-serif;
+  color: #8ec451;
+  font-size: 25px;
+  font-weight: 400;
+}
+.row {
+  text-align: center;
+  padding: 30px 100px;
+}
+.forecast {
+  font-size: 20px;
+  color: #8ec451;
+}
+#day {
+  border: 1px solid #8ec451;
+  padding: 1px;
+  border-top: none;
+  border-bottom: none;
+}
+#dayleft {
+  border: 1px solid #8ec451;
+  padding: 1px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+#dayright {
+  border: 1px solid #8ec451;
+  padding: 1px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
