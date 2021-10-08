@@ -1,4 +1,4 @@
-alert(`HEy`);
+alert(`hi!`);
 // current date and time
 let now = new Date();
 let days = [
