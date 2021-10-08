@@ -21,7 +21,7 @@ function cityUpdate(event) {
   let cityPlacement = document.querySelector("#city");
   cityPlacement.innerHTML = `${input.value}`;
   let apiKey = `05b30e89e4c2870b40267781384310db`;
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemp);
 }
 
