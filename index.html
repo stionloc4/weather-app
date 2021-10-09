@@ -21,76 +21,78 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <form id="citySearch">
-        <input id="location" type="text" placeholder="location" />
-        <button id="searchbutton" type="submit">search</button>
-      </form>
-      <h1>
-        <span class="place" id="city">Phoenix | Arizona</span>
-        <br />
-        <span class="day" id="date">Saturday</span>
-      </h1>
-      <div class="row">
-        <div id="temperature" class="col-6">🌤 39° C</div>
-        <div id="description" class="col-6">
-          <p>
-            <span class="feelsLike"> Feels Like: 39° C </span>
-            <br />
-            <span class="humidity"> Humidity: 22% </span>
-            <br />
-            <span class="wind">` Wind: 8km/h</span>
-          </p>
+    <div class="weatherAppWrapper">
+      <div class="container">
+        <form id="citySearch">
+          <input id="location" type="text" placeholder="location" />
+          <button id="searchbutton" type="submit">search</button>
+        </form>
+        <h1>
+          <span class="place" id="city">Phoenix | Arizona</span>
+          <br />
+          <span class="day" id="date">Saturday</span>
+        </h1>
+        <div class="row">
+          <div id="temperature" class="col-6">🌤 39° C</div>
+          <div id="description" class="col-6">
+            <p>
+              <span class="feelsLike"> Feels Like: 39° C </span>
+              <br />
+              <span class="humidity"> Humidity: 22% </span>
+              <br />
+              <span class="wind">` Wind: 8km/h</span>
+            </p>
+          </div>
         </div>
+        <div id="future" class="row">
+          <div id="dayleft" class="col">
+            <span class="dayOne">Day 1</span>
+            <br />
+            <div class="forecast">
+              40° C
+              <br />
+              🌥
+            </div>
+          </div>
+          <div id="day" class="col">
+            <span class="dayTwo">Day 2</span>
+            <br />
+            <div class="forecast">
+              41° C
+              <br />
+              ☀️
+            </div>
+          </div>
+          <div id="day" class="col">
+            <span class="dayThree">Day 3</span>
+            <br />
+            <div class="forecast">
+              40° C
+              <br />
+              ☀️
+            </div>
+          </div>
+          <div id="day" class="col">
+            <span class="dayFour">Day 4</span>
+            <br />
+            <div class="forecast">
+              42° C
+              <br />
+              🌤
+            </div>
+          </div>
+          <div id="dayright" class="col">
+            <span class="dayFive">Day 5</span>
+            <br />
+            <div class="forecast">
+              41° C
+              <br />
+              🌥
+            </div>
+          </div>
+        </div>
+        <footer><br />Coded by Sabrina Tionloc.</footer>
       </div>
-      <div id="future" class="row">
-        <div id="dayleft" class="col">
-          Sunday
-          <br />
-          <div class="forecast">
-            40° C
-            <br />
-            🌥
-          </div>
-        </div>
-        <div id="day" class="col">
-          Monday
-          <br />
-          <div class="forecast">
-            41° C
-            <br />
-            ☀️
-          </div>
-        </div>
-        <div id="day" class="col">
-          Tuesday
-          <br />
-          <div class="forecast">
-            40° C
-            <br />
-            ☀️
-          </div>
-        </div>
-        <div id="day" class="col">
-          Wednesday
-          <br />
-          <div class="forecast">
-            42° C
-            <br />
-            🌤
-          </div>
-        </div>
-        <div id="dayright" class="col">
-          Thursday
-          <br />
-          <div class="forecast">
-            41° C
-            <br />
-            🌥
-          </div>
-        </div>
-      </div>
-      <footer><br />Coded by Sabrina Tionloc.</footer>
     </div>
     <script src="src/script.js"></script>
   </body>

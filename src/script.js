@@ -8,10 +8,32 @@ let days = [
   "Thursday",
   "Friday",
   "Saturday",
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
 ];
 let dateFormat = `${days[now.getDay()]} ${now.getHours()}:${now.getMinutes()}`;
 let datePlacement = document.querySelector("#date");
 datePlacement.innerHTML = `${dateFormat}`;
+console.log(now.getDay() + 10);
+console.log(now.getDay());
+
+// future date forecasts
+let dayOne = document.querySelector(".dayOne");
+dayOne.innerHTML = `${days[now.getDay() + 1]}`;
+let dayTwo = document.querySelector(".dayTwo");
+dayTwo.innerHTML = `${days[now.getDay() + 2]}`;
+let dayThree = document.querySelector(".dayThree");
+dayThree.innerHTML = `${days[now.getDay() + 3]}`;
+let dayFour = document.querySelector(".dayFour");
+dayFour.innerHTML = `${days[now.getDay() + 4]}`;
+let dayFive = document.querySelector(".dayFive");
+dayFive.innerHTML = `${days[now.getDay() + 5]}`;
+
 //search engine
 
 function cityUpdate(event) {
@@ -21,13 +43,15 @@ function cityUpdate(event) {
   cityPlacement.innerHTML = `${input.value}`;
   let apiKey = `05b30e89e4c2870b40267781384310db`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=metric`;
+  let apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${input.value}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemp);
+  axios.get(apiUrlForecast).then(showForecast);
 }
 
 let form = document.querySelector("form");
 form.addEventListener("submit", cityUpdate);
 
-// temperature
+//  current temperature
 
 function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
@@ -43,3 +67,7 @@ function showTemp(response) {
   let windPlacement = document.querySelector(".wind");
   windPlacement.innerHTML = `Wind: ${windIndex} m/s`;
 }
+
+// future forecast
+
+function showForecast(response) {}

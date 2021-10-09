@@ -15,21 +15,26 @@ h1 {
   top: 10px;
 }
 body {
-  padding: 20px 300px;
   display: block;
-  margin: 0 auto;
+  padding-top: 20px;
 }
 footer {
   text-align: center;
   color: #8ec451;
   font-size: small;
 }
+.weatherAppWrapper {
+  max-width: 800px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  display: block;
+}
 .container {
   padding: 30px;
   border: 10px solid #8ec451;
   border-radius: 70px;
   display: block;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 #location {
