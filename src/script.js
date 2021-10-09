@@ -33,7 +33,6 @@ let dayFive = document.querySelector(".dayFive");
 dayFive.innerHTML = `${days[now.getDay() + 5]}`;
 
 //search engine
-
 function cityUpdate(event) {
   event.preventDefault();
   let input = document.querySelector("#location");
@@ -50,7 +49,6 @@ let form = document.querySelector("form");
 form.addEventListener("submit", cityUpdate);
 
 //  current temperature
-
 function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#temperature");
