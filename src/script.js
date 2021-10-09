@@ -19,10 +19,8 @@ let days = [
 let dateFormat = `${days[now.getDay()]} ${now.getHours()}:${now.getMinutes()}`;
 let datePlacement = document.querySelector("#date");
 datePlacement.innerHTML = `${dateFormat}`;
-console.log(now.getDay() + 10);
-console.log(now.getDay());
 
-// future date forecasts
+// future day
 let dayOne = document.querySelector(".dayOne");
 dayOne.innerHTML = `${days[now.getDay() + 1]}`;
 let dayTwo = document.querySelector(".dayTwo");
@@ -43,7 +41,7 @@ function cityUpdate(event) {
   cityPlacement.innerHTML = `${input.value}`;
   let apiKey = `05b30e89e4c2870b40267781384310db`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=metric`;
-  let apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${input.value}&appid=${apiKey}&units=metric`;
+  let apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${input.value}&cnt=6&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemp);
   axios.get(apiUrlForecast).then(showForecast);
 }
@@ -70,4 +68,4 @@ function showTemp(response) {
 
 // future forecast
 
-function showForecast(response) {}
+//function showForecast(response) {
