@@ -104,3 +104,6 @@ footer {
   border-bottom: none;
   border-right: none;
 }
+#city {
+  text-transform: capitalize;
+}

@@ -50,6 +50,9 @@ form.addEventListener("submit", cityUpdate);
 
 //  current temperature
 function showTemp(response) {
+  let stateCountry = document.querySelector("#stateCountry");
+  stateCountry.innerHTML = response.data.sys.country;
+  //response.data.sys.country;
   let temp = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#temperature");
   currentTemp.innerHTML = `🌤 ${temp}° C`;
