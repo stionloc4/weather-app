@@ -36,7 +36,6 @@ dayFive.innerHTML = `${days[now.getDay() + 5]}`;
 function cityUpdate(event) {
   event.preventDefault();
   let input = document.querySelector("#location");
-  input.toLowerCase();
   let cityPlacement = document.querySelector("#city");
   cityPlacement.innerHTML = `${input.value}`;
   let apiKey = `05b30e89e4c2870b40267781384310db`;
